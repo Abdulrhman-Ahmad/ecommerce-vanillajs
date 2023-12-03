@@ -9,7 +9,6 @@ ECommerce Website is a web application built with JavaScript, CSS, and HTML. It 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 - [Acknowledgments](#acknowledgments)
 - [Contact](#contact)
 
@@ -20,7 +19,7 @@ To run the ECommerce Website locally, follow these steps:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/ecommerce-website.git
+    git clone https://github.com/Abdulrhman-Ahmad/abdulrhman-ahmad.github.io
     cd ecommerce-website
     ```
 
@@ -46,7 +45,7 @@ To use the ECommerce Website:
 
 7. Complete the purchase.
 
-## Contributing
+## Contributing     
 
 We welcome contributions to enhance the ECommerce Website. To contribute, please follow these steps:
 
@@ -58,10 +57,6 @@ We welcome contributions to enhance the ECommerce Website. To contribute, please
 
 4. Ensure your code passes tests and meets the project's coding standards.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE.md) - see the [LICENSE.md](LICENSE.md) file for details.
-
 ## Acknowledgments
 
 - The project uses Firebase for data storage.
@@ -69,4 +64,4 @@ This project is licensed under the [MIT License](LICENSE.md) - see the [LICENSE.
 
 ## Contact
 
-For questions or feedback, please contact [Abdulrahman_Ahmed] at [abdulrahmanabualmagd@gmail.com].
+For questions or feedback, please contact me (Abdulrahman) at [abdulrahmanabualmagd@gmail.com].
