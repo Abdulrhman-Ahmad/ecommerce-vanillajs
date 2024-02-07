@@ -419,3 +419,6 @@ lib/
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,visualstudio
+
+desktop.ini
+web.config
