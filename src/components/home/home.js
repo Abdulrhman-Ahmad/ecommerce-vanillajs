@@ -18,9 +18,7 @@ export class HomeComponent extends HTMLElement {
     // class data
     let cardsContainer = document.querySelectorAll("#cardsContainer img");
     let buttons = document.querySelectorAll("#cardsContainer button");
-    
-    console.log('hs')
-    
+        
     cardsContainer.forEach((card) =>
       card.addEventListener("click", (e) => {
         e.preventDefault();
