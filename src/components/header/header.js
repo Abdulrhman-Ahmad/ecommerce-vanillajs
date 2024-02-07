@@ -14,17 +14,13 @@ export class HeaderComponent extends HTMLElement {
 
   initialize() {
     // Initialize Localstorage Variables
-    this.initializingFromLocal();
+    initializingFromLocal();
 
     // adding event for shopping cart button in the header to open cart page
     let shoppingCartButton = document.querySelector(
       "#headerShoppingCartButton"
     );
 
-    shoppingCartButton.addEventListener("click", (e) => {
-      e.preventDefault();
-      window.location.href = "/#cart";
-    });
 
     // ----------------------- [ Logged and UnLogged ] ---------------------------------
     let logged = document.querySelector("#logged");
@@ -67,7 +63,6 @@ export class HeaderComponent extends HTMLElement {
     }
 
     unLogged.addEventListener("click", (e) => {
-      e.preventDefault();
       let currentUrl = window.location.href;
       setItem(localPassedHref, currentUrl);
     });
@@ -75,22 +70,5 @@ export class HeaderComponent extends HTMLElement {
     // get and set in local storage
     var addToCartBadgeCounter = getItem(localAddToCartCountedNum);
   }
-
-  initializingFromLocal() {
-    if (getItem(localCartData) == null) {
-      setItem(localCartData, null);
-    }
-
-    if (getItem(localAddToCartCountedNum) == null) {
-      setItem(localAddToCartCountedNum, 0);
-    }
-
-    if (getItem(localPassedProduct) == null) {
-      setItem(localPassedProduct, null);
-    }
-
-    // setting counted num from local to the add to cart badge
-    let addToCartBadge = document.querySelector("#addToCartBadge");
-    addToCartBadge.innerHTML = getItem(localAddToCartCountedNum) ?? "";
-  }
+  
 }

@@ -1,5 +1,5 @@
 const routes = {
-  "": "",
+  "": "home-component",
   "#home": "home-component",
   "#cart": "cart-component",
   "#login": "login-component",
@@ -23,3 +23,5 @@ export function handleNavigation() {
   const path = window.location.hash;
   navigateTO(path);
 }
+
+handleNavigation()

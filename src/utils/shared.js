@@ -29,7 +29,7 @@ function updateDataBaseAll(url, key, value) {
     });
 }
 function deleteDataBaseAll(url, key) {
-  fetch(url)
+   return fetch(url)
     .then((res) => res.json())
     .then((data) => {
       for (let element of data) {
@@ -136,6 +136,7 @@ var localFilterChecked = "filterChecked";
 var localCurrentLogged = "currentLoggedId";
 var localPassedHref = "PassedHref";
 var localTotalPrice = "PassedTotalPrice";
+var Admin = 23;
 
 var productsUrl =
   "https://testing-e2f37-default-rtdb.firebaseio.com/products.json";
@@ -150,6 +151,24 @@ function setItem(key, value) {
   window.localStorage.setItem(key, value);
 }
 
+function initializingFromLocal() {
+  if (getItem(localCartData) == null) {
+    setItem(localCartData, null);
+  }
 
+  if (getItem(localAddToCartCountedNum) == null) {
+    setItem(localAddToCartCountedNum, "0");
+  }
 
+  if (getItem(localPassedProduct) == null) {
+    setItem(localPassedProduct, null);
+  }
 
+  // setting counted num from local to the add to cart badge
+  let addToCartBadge = document.querySelector("#addToCartBadge");
+  addToCartBadge.innerHTML = getItem(localAddToCartCountedNum);
+}
+
+function passedProductId(value) {
+  window.localStorage.setItem("passedProductId", value);
+}
