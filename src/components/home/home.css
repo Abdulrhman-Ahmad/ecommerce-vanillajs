@@ -1,0 +1,32 @@
+#cardsContainer button{
+    background-color: rgba(0, 0, 0, 0.518);
+    border: 1px solid black ;
+    border-radius: 0px;
+    transition: 400ms;
+}
+#cardsContainer button:hover{
+    transition: 400ms;
+    color: white;
+    background-color: black;
+}
+#ShowAllProducts{
+    border-radius: 0px;
+    background-color: black;
+    color: white;
+    transition: 400ms;
+}
+#ShowAllProducts:hover{
+    color: black;
+    background-color: white;
+    transition: 400ms;
+}
+img
+{
+    transition:  0.5s;
+    border-radius: 0px !important;
+}
+img:hover {
+
+    opacity: .5  ;
+}
+

@@ -1,0 +1,77 @@
+<div id="headerContainer" class="container-fluid"
+    style="position: sticky; top: 0px; z-index: 1; background-color: white;">
+
+    <!-- first row on header [ banner ] -->
+    <div id="HeaderBanner" class="row bg-black text-white text-center p-2">
+        <div id="headerBannerContent" class="col-12 p-3">Content Banner</div>
+    </div>
+
+    <!-- Header Help section language and currency Section -->
+    <div id="headerHelp" class="row">
+        <div id="headerContent" class="col-12 d-flex justify-content-end">
+            <div id="headerContentHelp" class="btn">Help</div>
+            <div id="headerContentLocation" class="btn">Egypt</div>
+            <div id="headerContentCurrency" class="btn">EGP</div>
+            <div id="headerContentLanguage" class="btn">English</div>
+        </div>
+    </div>
+
+    <!-- Header Nav Bar Section -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary row" id="headerNavBar">
+        <div class="container-fluid ">
+
+            <!-- brand name -->
+            <a class="navbar-brand fs-1" href="../index.html">Peloto</a>
+
+
+            <!-- menu button that will appear in small width -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- this area collapse in small width and show menu button -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- search area and the search button -->
+                <form class="d-flex ms-auto w-50" role="search">
+                    <input class="form-control me-3 " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success nrmBrd" type="submit">Search</button>
+                </form>
+
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+
+                    <li class="nav-item m-1" id="unLogged">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-regular fa-user"
+                                style="color: #000000;"></i> Login</a>
+                    </li>
+                    <li class="nav-item m-1" id="logged">
+                        <a id="loggedLink" href="../html/accountPage.html" class="nav-link active" aria-current="page"
+                            href="../html/account.html">
+
+                            <!-- CODE MUST APPEAR HERE NEW PROFILE -->
+
+                        </a>
+                    </li>
+                    <li class="nav-item m-1">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-regular fa-heart"
+                                style="color: #000000;"></i> Favorite</a>
+                    </li>
+                    <li style="cursor: pointer;" id="headerShoppingCartButton" class="nav-item m-1 position-relative">
+                        <a class="nav-link active" aria-current="page"><i class="fa-solid fa-cart-shopping"
+                                style="color: #000000;"></i></i></i> Shopping Cart<span id="addToCartBadge"
+                                class="bg-black text-white position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                0
+                                <span class="visually-hidden">unread messages</span></a>
+
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+</div>
