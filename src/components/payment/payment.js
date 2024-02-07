@@ -7,7 +7,7 @@ export class Payment extends HTMLElement {
   }
 
   async initializeAsync() {
-    await CustomElementLoader.LoacComponent(this, "payment");
+    await CustomElementLoader.loadComponent(this, "payment");
     this.initialize();
   }
 

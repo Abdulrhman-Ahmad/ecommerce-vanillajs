@@ -1,4 +1,4 @@
-import { CustomElementLoader } from "/src/utils/customElementLoader";
+import { CustomElementLoader } from "/src/utils/customElementLoader.js";
 
 export class ExitMark extends HTMLElement{
     constructor(){

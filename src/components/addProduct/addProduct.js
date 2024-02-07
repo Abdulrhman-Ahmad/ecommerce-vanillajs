@@ -7,7 +7,7 @@ export class AddProduct extends HTMLElement {
   }
 
   async initializeAsync() {
-    await CustomElementLoader.LoacComponent(this, "addProduct");
+    await CustomElementLoader.loadComponent(this, "addProduct");
     this.initialize();
   }
 
@@ -61,7 +61,7 @@ export class AddProduct extends HTMLElement {
         });
     });
 
-    showData(productsUrl);
+    //showData(productsUrl);
 
     // function storeProductData()
     // {

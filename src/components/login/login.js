@@ -7,7 +7,7 @@ export class Login extends HTMLElement {
   }
 
   async initializeAsync() {
-    await CustomElementLoader.LoacComponent(this, "login");
+    await CustomElementLoader.loadComponent(this, "login");
     this.initialize();
   }
 

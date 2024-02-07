@@ -7,7 +7,7 @@ export class Register extends HTMLElement {
   }
 
   async initializeAsync() {
-    await CustomElementLoader.LoacComponent(this, "register");
+    await CustomElementLoader.loadComponent(this, "register");
     this.initialize();
   }
 

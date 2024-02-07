@@ -7,7 +7,7 @@ export class Products extends HTMLElement {
   }
 
   async initializeAsync() {
-    await CustomElementLoader.LoacComponent(this, "products");
+    await CustomElementLoader.loadComponent(this, "products");
     this.initialize();
   }
 
