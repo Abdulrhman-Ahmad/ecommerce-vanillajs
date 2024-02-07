@@ -1,3 +1,5 @@
+import { cardCreator } from "/src/utils/product/productCards.js"
+
 export function numberingFilterBadge(obj) {
   // array to count each category
   let categoryArray = [0, 0, 0, 0, 0, 0];
@@ -81,7 +83,7 @@ export function showFiltered(arr) {
   let bodyProducts = document.querySelector("#bodyProducts");
   bodyProducts.innerHTML = "";
 
-  for (index of arr) {
+  for (var index of arr) {
     getObjectByCategory(productsUrl, index);
   }
 }
