@@ -1,0 +1,16 @@
+#exitMark{
+    text-decoration: none;
+    color: white;
+    width: 4rem;
+    text-align: center;
+    padding: 0px;
+    background-color: black;
+    border-radius: 0.2rem;
+    transition: 300ms;
+}
+
+#exitMark:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(236, 0, 0);
+    transition: 300ms;
+}

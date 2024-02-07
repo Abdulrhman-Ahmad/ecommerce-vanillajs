@@ -1,15 +1,11 @@
-
-window.addEventListener('load', e => {
+window.addEventListener("load", (e) => {
   let value = parseInt(getItem(localCurrentLogged));
-  
-  if (!value)
-  {
+
+  if (!value) {
     console.log(value);
-      window.location.href = 'signInPage.html';
+    window.location.href = "signInPage.html";
   }
 });
-
-
 
 let TotalAmount = 0;
 
@@ -192,11 +188,9 @@ function checkForm() {
           setTimeout(() => {
             doneMsg.style.opacity = "0";
 
-            setItem(localAddToCartCountedNum,0);
-            setItem(localCartData,null);
-            window.location.href = 'productsPage.html';
-
-
+            setItem(localAddToCartCountedNum, 0);
+            setItem(localCartData, null);
+            window.location.href = "productsPage.html";
           }, 2000);
           /////////////////////////////////////////////////
         } else {
@@ -230,10 +224,6 @@ function checkForm() {
       alertMsg.style.opacity = "0";
     }, 2000);
   }
-
-
-
-
 }
 
 // card numbers validation assest//////////////////
