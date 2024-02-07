@@ -1,4 +1,3 @@
-// Import all the custom elements
 import {
   HeaderComponent,
   FooterComponent,
