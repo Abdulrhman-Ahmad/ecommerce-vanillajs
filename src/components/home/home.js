@@ -24,7 +24,7 @@ export class HomeComponent extends HTMLElement {
         e.preventDefault();
         let value = e.target.parentNode.getAttribute("value");
         setItem(localFilterChecked, value);
-        window.location.href = "html/productsPage.html";
+        window.location.href = "#products";
       })
     );
     
@@ -33,7 +33,7 @@ export class HomeComponent extends HTMLElement {
         e.preventDefault();
         let value = e.target.parentNode.getAttribute("value");
         setItem(localFilterChecked, value);
-        window.location.href = "html/productsPage.html";
+        window.location.href = "#products";
       });
     });
     
@@ -43,7 +43,7 @@ export class HomeComponent extends HTMLElement {
       e.preventDefault();
       let value = e.target.getAttribute("value");
       setItem(localFilterChecked, value);
-      window.location.href = "html/productsPage.html";
+      window.location.href = "#products";
     });
     }
 

@@ -85,8 +85,12 @@ export class Products extends HTMLElement {
         });
       });
 
+      function onclick(){
+        
+      }
+
       // Selecting all addToCart anchors(button)
-      addToCartBtns = document.querySelectorAll(".card a");
+      addToCartBtns = document.querySelectorAll("card a");
       // looping over the buttons to add event for each one on add to cart click to count the page
       addToCartBtns.forEach((btn) =>
         btn.addEventListener("click", (e) => {

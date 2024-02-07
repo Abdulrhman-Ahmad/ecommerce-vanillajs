@@ -13,16 +13,17 @@ export class HeaderComponent extends HTMLElement {
   }
 
   initialize() {
+    // Initialize Localstorage Variables
     this.initializingFromLocal();
 
     // adding event for shopping cart button in the header to open cart page
     let shoppingCartButton = document.querySelector(
       "#headerShoppingCartButton"
     );
+
     shoppingCartButton.addEventListener("click", (e) => {
       e.preventDefault();
-      console.log("s");
-      window.open("cartPage.html", "_self");
+      window.location.href = "/#cart";
     });
 
     // ----------------------- [ Logged and UnLogged ] ---------------------------------
@@ -69,7 +70,6 @@ export class HeaderComponent extends HTMLElement {
       e.preventDefault();
       let currentUrl = window.location.href;
       setItem(localPassedHref, currentUrl);
-      window.location.href = "signInPage.html";
     });
 
     // get and set in local storage

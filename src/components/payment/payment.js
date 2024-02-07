@@ -12,6 +12,7 @@ export class Payment extends HTMLElement {
   }
 
   initialize() {
+
     window.addEventListener("load", (e) => {
       let value = parseInt(getItem(localCurrentLogged));
 
@@ -140,11 +141,27 @@ export class Payment extends HTMLElement {
     var doneMsg = document.getElementById("doneMsg");
 
     var expirationDate = document.getElementById("expirationDate");
-    var cvv = document.getElementById("cvv");
+    var cvv = document.querySelector('#cvv');
 
     var payBtn = document.getElementById("payBtn");
 
     // card number validation/////////////////
+    
+    function prev(event) {
+      if (event.key.match(/[0-9]/i)) {
+      } else {
+        event.preventDefault();
+      }
+    }
+    function check() {
+      if (cardNumAll[i].value.length > 3 && i <= 2) {
+        cardNumAll[i].blur();
+        cardNumAll[i + 1].focus();
+      } else if (cardNumAll[i].value.length > 3 && i == 3) {
+        cardNumAll[i].blur();
+        expirationDate.focus();
+      }
+    }
 
     for (let i = 0; i < cardNumAll.length; i++) {
       cardNumAll[i].addEventListener("keypress", prev);
@@ -181,7 +198,6 @@ export class Payment extends HTMLElement {
     });
 
     ////////////////////////////////////////////////////////////// Alert Validation /////////////////////////////////////////////////////////
-
     ///////////cvv validation////////////////////////
     cvv.addEventListener("keypress", prev);
 
