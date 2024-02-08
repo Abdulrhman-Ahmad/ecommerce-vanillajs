@@ -43,29 +43,30 @@
 
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
 
+                    <li style="cursor: pointer;" id="headerShoppingCartButton" class="nav-item m-1 position-relative">
+                        <a class="nav-link active" href="/#cart" aria-current="page"><i
+                                class="fa-solid fa-cart-shopping"></i> Cart
+                            <span id="addToCartBadge"
+                                class="text-light bg-success position-absolute top-0 start-100 translate-middle badge rounded-pill ">
+                                0
+                    </li>
+                    <li class="nav-item m-1">
+                        <a class="nav-link active" aria-current="page" href="/#cart"><i class="fa-solid fa-thumbs-up"></i> Favorite</a>
+                    </li>
+                    
                     <li class="nav-item m-1" id="unLogged">
-                        <a class="nav-link active" aria-current="page" href="/#login"><i class="fa-regular fa-user"
-                                style="color: #000000;"></i> Login</a>
+                        <a class="nav-link active" aria-current="page" href="/#login"><i
+                                class="fa-solid fa-right-to-bracket"></i>
+                            Login</a>
                     </li>
                     <li class="nav-item m-1" id="logged">
                         <a id="loggedLink" href="../html/accountPage.html" class="nav-link active" aria-current="page"
                             href="../html/account.html">
-
                             <!-- CODE MUST APPEAR HERE NEW PROFILE -->
                         </a>
                     </li>
-                    <li class="nav-item m-1">
-                        <a class="nav-link active" aria-current="page" href="/#cart"><i class="fa-regular fa-heart"
-                                style="color: #000000;"></i> Favorite</a>
-                    </li>
-                    <li style="cursor: pointer;" id="headerShoppingCartButton" class="nav-item m-1 position-relative">
-                        <a class="nav-link active" href="/#cart" aria-current="page"><i
-                                class="fa-solid fa-cart-shopping" style="color: #000000;"></i></i></i> Shopping
-                            Cart<span id="addToCartBadge"
-                                class="bg-black text-white position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                0
-                                <span class="visually-hidden">unread messages</span></a>
-                    </li>
+
+
 
                 </ul>
             </div>
