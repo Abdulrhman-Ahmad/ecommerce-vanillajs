@@ -1,3 +1,5 @@
+
+// This function is used to add event to cards in local storage to open it in the product details page 
 export function addToCartButtonClickEvent() {
   let card = document.querySelectorAll(".card");
   // Open the clicked card with setting its value on the localStorage
@@ -6,10 +8,9 @@ export function addToCartButtonClickEvent() {
       e.preventDefault();
       let id = e.target.getAttribute("value");
       setItem(localPassedProduct, e.target.getAttribute("value"));
-      window.open("productDetailPage.html", "_self");
+      window.open("/#productdetails", "_self");
     });
   });
-
 
   document.querySelectorAll(".card a").forEach((btn) =>
     btn.addEventListener("click", (e) => {
