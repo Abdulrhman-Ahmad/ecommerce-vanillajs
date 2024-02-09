@@ -82,7 +82,7 @@ export class Account extends HTMLElement {
       setItem(localCurrentLogged, 0);
       setItem(localCartData, "null");
       setItem(localAddToCartCountedNum, 0);
-      window.location.href = "../html/signInPage.html";
+      window.location.href = "/#login";
     });
   }
 }

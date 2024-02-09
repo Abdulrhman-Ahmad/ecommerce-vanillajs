@@ -13,7 +13,7 @@ export class Cart extends HTMLElement {
     this.initialize();
   }
 
-  initialize() {
+    initialize() {
 
     LoadCart();
     

@@ -126,17 +126,18 @@ function RemoveItemEvent(element) {
 export function CheckButton() {
   let checkoutButton = document.querySelector("#checkOutButton");
   checkoutButton.addEventListener("click", (e) => {
+    console.log("Entered")
     e.preventDefault();
-    if (currentId == "0" || !getItem(localCurrentLogged)) {
+    if (getItem(localCurrentLogged) == "0" || !getItem(localCurrentLogged)) {
       let currentUrl = window.location.href;
       setItem(localPassedHref, currentUrl);
-      window.location.href = "signInPage.html";
+      window.location.href = "/#login";
     } else {
       if (getItem(localCartData) == "null" || getItem(localCartData) == "") {
         console.log("Empty Cart");
       } else {
         setItem(localTotalPrice, TotalAmount);
-        window.location.href = "paymentPage.html";
+        window.location.href = "/#payment";
       }
     }
   });
