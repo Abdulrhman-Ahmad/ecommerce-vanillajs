@@ -29,7 +29,7 @@ function updateDataBaseAll(url, key, value) {
     });
 }
 function deleteDataBaseAll(url, key) {
-   return fetch(url)
+  return fetch(url)
     .then((res) => res.json())
     .then((data) => {
       for (let element of data) {
@@ -172,3 +172,4 @@ function initializingFromLocal() {
 function passedProductId(value) {
   window.localStorage.setItem("passedProductId", value);
 }
+

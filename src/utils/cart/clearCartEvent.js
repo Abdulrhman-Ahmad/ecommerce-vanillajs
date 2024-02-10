@@ -14,3 +14,39 @@ export function ClearCartEvent() {
     addToCartBadge.innerHTML = getItem(localAddToCartCountedNum);
   });
 }
+
+function getStoredData() {
+  if (getItem(localCartData) == 'null') 
+  return;
+
+  let dataStore = getItem(localCartData).split(",");
+  for (let item of dataStore) {
+    getCartDataBaseById(productsUrl, parseInt(item));
+  }
+}
+
+function getCartDataBaseById(url, id) {
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => {
+      let state = false;
+      for (let element of data) {
+        if (element.id == parseInt(id) + 1) {
+          execute(element);
+          state = true;
+          break;
+        }
+      }
+
+      if (!state) {
+        console.log("Not found");
+        // do something here ... write code to execute
+      }
+    });
+  function execute(data) {
+    CreateCardsForCheck(data);
+    TotalAmount = TotalAmount + data.price;
+
+    totalPrice.innerHTML = TotalAmount;
+  }
+}

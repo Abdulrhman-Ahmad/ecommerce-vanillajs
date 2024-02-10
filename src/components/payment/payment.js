@@ -101,7 +101,7 @@ export class Payment extends HTMLElement {
         }
       }
     }
-
+    
     function getCartDataBaseById(url, id) {
       fetch(url)
         .then((res) => res.json())
@@ -114,7 +114,7 @@ export class Payment extends HTMLElement {
               break;
             }
           }
-
+    
           if (!state) {
             console.log("Not found");
             // do something here ... write code to execute
@@ -123,10 +123,12 @@ export class Payment extends HTMLElement {
       function execute(data) {
         CreateCardsForCheck(data);
         TotalAmount = TotalAmount + data.price;
-
+    
         totalPrice.innerHTML = TotalAmount;
       }
     }
+
+
 
     getStoredData();
 

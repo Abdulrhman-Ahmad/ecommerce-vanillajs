@@ -5,7 +5,7 @@ export class CustomElementLoader {
   static async loadComponent(element, componentName) {
 
     // Get Path for html and css files
-    const basePath = "/src/components";
+    const basePath = "./../../src/components";
     const htmlPath = `${basePath}/${componentName}/${componentName}.html`;
     const cssPath = `${basePath}/${componentName}/${componentName}.css`;
 
