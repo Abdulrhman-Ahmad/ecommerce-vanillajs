@@ -11,9 +11,9 @@ import {
   ProductDetails,
   Products,
   ExitMark,
-} from "/src/customElementRegistery.js";
+} from "./src/customElementRegistery.js";
 
-import { handleNavigation } from "/src/customElementRouting.js"
+import { handleNavigation } from "./src/customElementRouting.js"
 
 
 window.addEventListener("hashchange", handleNavigation);

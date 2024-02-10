@@ -1,4 +1,4 @@
-import { CustomElementLoader } from "/src/utils/customElementLoader.js";
+import { CustomElementLoader } from "./../../utils/customElementLoader.js";
 export class ProductDetails extends HTMLElement {
   constructor() {
     super();

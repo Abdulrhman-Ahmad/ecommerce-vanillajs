@@ -1,6 +1,6 @@
-import { CustomElementLoader } from "/src/utils/customElementLoader.js";
-import { LoadCart, CheckButton } from "/src/utils/cart/cartitems.js";
-import { ClearCartEvent } from "/src/utils/cart/clearCartEvent.js"
+import { CustomElementLoader } from "./../../utils/customElementLoader.js";
+import { LoadCart, CheckButton } from "./../../utils/cart/cartitems.js";
+import { ClearCartEvent } from "./../../utils/cart/clearCartEvent.js"
 export class Cart extends HTMLElement {
   constructor() {
     super();

@@ -1,11 +1,11 @@
-import { CustomElementLoader } from "/src/utils/customElementLoader.js";
-import { createCards, cardCreator } from "/src/utils/product/productCards.js";
+import { CustomElementLoader } from "./../../utils/customElementLoader.js";
+import { createCards, cardCreator } from "./../..//utils/product/productCards.js";
 import {
   numberingFilterBadge,
   setFilter,
   showFiltered,
-} from "/src/utils/product/productFilter.js";
-import { addToCartButtonClickEvent } from "/src/utils/product/productCardsEvent.js";
+} from "./../..//utils/product/productFilter.js";
+import { addToCartButtonClickEvent } from "./../../utils/product/productCardsEvent.js";
 
 export class Products extends HTMLElement {
   constructor() {

@@ -1,5 +1,6 @@
 {
   "name": "front",
+  "type": "module",
   "version": "1.0.0",
   "description": "ECommerce Website is a web application built with JavaScript, CSS, and HTML. It utilizes web fonts and is integrated with Firebase for data storage. The project incorporates a fake API that contains products, users, and comments for each product. The website features client-side validation for login and registration processes and includes payment card validation. Additionally, it includes a checkout page, payment page, and allows product filtering based on categories.",
   "main": "main.js",
@@ -13,6 +14,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.1",
     "bootstrap": "^5.3.2",
-    "jquery": "^3.7.1"
+    "jquery": "^3.7.1",
+    "jsdom": "^24.0.0"
   }
 }

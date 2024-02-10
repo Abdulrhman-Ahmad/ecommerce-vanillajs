@@ -1,4 +1,4 @@
-import { cardCreator } from "/src/utils/product/productCards.js"
+import { cardCreator } from "./../../utils/product/productCards.js"
 
 export function numberingFilterBadge(obj) {
   // array to count each category
