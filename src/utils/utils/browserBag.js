@@ -1,4 +1,4 @@
-class BrowserBag {
+export class BrowserBag {
   localCurrentLogged;
   localPassedProduct;
   localAddToCartCountedNum;
@@ -8,7 +8,7 @@ class BrowserBag {
   localFilterChecked;
 
   constructor() {
-    localCurrentLogged = 0;
+    localCurrentLogged = null;
     localPassedProduct = 0;
     localAddToCartCountedNum = 0;
     localPassedHref = "";
