@@ -1,4 +1,4 @@
-import { CustomElementLoader } from "./../../utils/customElementLoader.js";
+import { CustomElementLoader } from "./../../utils/utils/customElementLoader.js";
 import { createCards, cardCreator } from "./../..//utils/product/productCards.js";
 import {
   numberingFilterBadge,

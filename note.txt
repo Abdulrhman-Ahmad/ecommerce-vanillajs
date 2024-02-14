@@ -1,1 +1,0 @@
-// check if the admin is logged or not to make a dashboard button on the header 

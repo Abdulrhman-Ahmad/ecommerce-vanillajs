@@ -1,4 +1,4 @@
-import { CustomElementLoader } from "./../../utils/customElementLoader.js";
+import { CustomElementLoader } from "./../../utils/utils/customElementLoader.js";
 export class Login extends HTMLElement {
   constructor() {
     super();

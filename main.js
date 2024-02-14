@@ -15,5 +15,4 @@ import {
 
 import { handleNavigation } from "./src/customElementRouting.js"
 
-
 window.addEventListener("hashchange", handleNavigation);
